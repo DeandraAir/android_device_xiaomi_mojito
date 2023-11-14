@@ -1,0 +1,102 @@
+#ADB
+ro.adb.secure.recovery=0
+
+# Bluetooth
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.enable.twsplussho=true
+persist.vendor.bt.a2dp.aac_whitelist=false
+persist.vendor.btstack.enable.lpa=true
+persist.vendor.bt.a2dp.hal.implementation=true
+
+# Camera
+log.tag.CHIUSECASE=ERROR
+
+# Charger
+ro.charger.enable_suspend=true
+
+# CNE
+persist.vendor.cne.feature=1
+
+# Disable async MTE on system_server
+arm64.memtag.process.system_server=off
+
+# Display
+debug.egl.hw=1
+debug.sf.hw=1
+debug.force_no_blanking=true
+debug.sf.enable_hwc_vds=1
+debug.sf.enable_planner_prediction=false
+debug.sf.latch_unsignaled=1
+debug.sf.enable_transaction_tracing=false
+debug.sf.predict_hwc_composition_strategy=0
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.start_graphics_allocator_service=true
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
+sys.displayfeature_hidl=true
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# LMK
+ro.lmk.psi_complete_stall_ms=70
+ro.lmk.swap_free_low_percentage=20
+
+# Media
+media.aac_51_output_enabled=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
+mmp.enable.3g2=true
+mm.enable.smoothstreaming=true
+persist.mm.enable.prefetch=true
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+vendor.mm.enable.qcom_parser=16777199
+
+# Netflix
+ro.netflix.channel=497730f0-ad4b-11e7-95a4-c7ad113ce187
+ro.netflix.signup=1
+
+# Radio
+DEVICE_PROVISIONED=1
+persist.data.df.dev_name=rmnet_usb0
+persist.radio.apm_sim_not_pwdn=1
+persist.radio.NO_STAPA=1
+persist.radio.VT_CAM_INTERFACE=1
+persist.radio.VT_HYBRID_ENABLE=1
+persist.radio.atfwd.start=false
+persist.radio.multisim.config=dsds
+ril.subscription.types=NV,RUIM
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+ro.telephony.default_cdma_sub=0
+telephony.lteOnCdmaDevice=1
+
+# RIL Powersaving
+persist.radio.add_power_save=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+ro.ril.fast.dormancy.rule=1
+ro.ril.fast.dormancy.timeout=3
+ro.mot.eri.losalert.delay=1000
+ro.vold.umsdirtyratio=20
+power.saving.mode=1
+
+# Maintainer
+ro.spos.maintainer=Deandra_Aditya
+
+# Storage.xml moment
+persist.sys.binary_xml=false
+
+#AvoidGfxAccel 
+ro.config.avoid_gfx_accel=true
+
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
